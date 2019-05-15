@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn -B -DskipTests -s /root/.m2/settings.xml clean package' 
+                sh 'mvn -B -DskipTests clean package' 
             }
         }
     }
